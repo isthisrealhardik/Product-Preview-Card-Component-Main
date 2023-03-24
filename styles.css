@@ -1,0 +1,119 @@
+:root {
+    /* Primary */
+    --darkCyan: hsl(158, 36%, 37%);
+    --darkCyanTwo: hsl(158, 38%, 27%);
+    --cream: hsl(30, 38%, 92%);
+
+    /* Neutral */
+    --veryDarkBlue: hsl(212, 21%, 14%);
+    --darkGrayishlue: hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+
+    /* Font */
+    --montserrat: 'Montserrat'; /* 500, 700 */
+    --fraunces: 'Fraunces'; /* 700 */
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--cream);
+    font-size: 14px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.container {
+    background-color: white;
+    width: 38vw;
+    height: 60vh;
+    border-radius: 10px;
+    display: flex;
+    box-shadow: 4px 8px 21px 0px rgba(0,0,0,0.1);
+}
+.Main-image {
+    max-width: 100%;
+    max-height: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    /* object-fit: cover; */
+}
+.right-container {
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+h3 {
+    font-family: var(--montserrat);
+    font-weight: 500;
+    font-size: 0.7rem;
+    letter-spacing: 5px;
+    color: var(--darkGrayishlue);
+    margin-bottom: 20px;
+}
+h1 {
+    font-family: var(--fraunces);
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: var(--veryDarkBlue);
+    line-height: 27px;
+}
+p {
+    font-family: var(--montserrat);
+    font-weight: 500;
+    font-size: 0.8rem;
+    color: var(--darkGrayishlue);
+    line-height: 20px;
+    padding: 15px 0px;
+    /* word-spacing: px; */
+}
+.price-container {
+    display: flex;
+}
+.price {
+    font-family: var(--fraunces);
+    font-size: 1.8rem;
+    color: var(--darkCyan);
+    transition: all 0.7s;
+}
+.price:hover {
+    color: var(--darkCyanTwo);
+}
+.two {
+    font-size: 0.8rem;
+    color: var(--darkGrayishlue);
+    margin: 0px 10px;
+    text-decoration: line-through;
+}
+button {
+    background-color: var(--darkCyan);
+    border-radius: 5px;
+    color: var(--white);
+    /* height: 40px;
+    width: 200px; */
+    border: none;
+    margin: 20px 0px;
+    padding: 15px 45px;
+    /* align-items: center; */
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--montserrat);
+    font-weight: 700;
+    font-size: 0.8rem; 
+    transition: all 0.7s;
+}
+button:hover {
+    background-color: var(--darkCyanTwo);
+}
+.Icon {
+    width: 13px;
+    margin: 0px 5px;
+}
